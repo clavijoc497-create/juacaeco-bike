@@ -1,0 +1,753 @@
+[17:34, 17/5/2026] Karolina Clavijo: <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juaica Eco-Bike</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<link rel="stylesheet" href="./static/css/estilos.css">
+<style>
+.whatsapp-float{
+    position:fixed;
+    width:60px;
+    height:60px;
+    bottom:20px;
+    right:20px;
+    background:#25D366;
+    color:rgb(200, 201, 132);
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:35px;
+    text-decoration:none;
+    z-index:9999;
+}
+
+
+</style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+    <a class="navbar-brand fw-bold" href="#inicio">Menu</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end bg-dark" id="navbarNav">
+        <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="#testimonios">Testimonios</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li> 
+        </ul>
+        <button class="btn btn-light ms-3 position-relative" data-bs-toggle="offcanvas" data-bs-target="#cartDrawer">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span class="badge bg-success position-absolute top-0 start-100 translate-middle" id="cartBadge">0</span>
+        </button>
+    </div>
+    </div>
+</nav>
+
+<section id="inicio">
+<div id="heroCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+    <div class="carousel-inner">
+<div class="carousel-item active">
+        <img src="https://www.vipealo.com/blog/wp-content/uploads/2022/02/AdobeStock_380277759-1.jpeg" class="d-block w-100" alt="Libros y lectura">
+        <div class="carousel-caption d-flex flex-column justify-content-center align-items-center">
+        <h1 class="display-4 fw-bold">Bienvenidos a Juaica-Ecobike </h1>
+        <p>Descubre el placer del ciclismo en todo su esplendor</p>
+        </div>
+    </div>
+    
+    <div class="carousel-item">
+        <img src="https://i.postimg.cc/sXsPvbbX/Whats-App-Image-2026-05-17-at-15-41-56.jpg" class="d-block w-100" alt="Estanterías de libros">
+        <div class="carousel-caption d-flex flex-column justify-content-center align-items-center">
+        <h1 class="display-5 fw-bold">Una experiencia inolvidable</h1>
+        <p>Acompañamiento en montaña, rutas  y mucho más</p>
+        </div>
+    </div>
+    <div class="carousel-item">
+        <img src="https://scontent.fbog23-1.fna.fbcdn.net/v/t39.30808-6/482192961_656105330315969_5773944480066617187_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeEeb_Z6hDzMpJQ8-BI-VULnZVIr1w8QyxVlUivXDxDLFcT_afmbZia3pNIij-6cwUDietGxW9NdF2ptk7pELSlp&_nc_ohc=XsgJkra4OjkQ7kNvwEaBBj8&_nc_oc=Ado6WL-pXpiLGvTyadV7f8SwAk9MYSjCTA-NGos4lNKcqKX5eDi-rvOx-hcYSDR0Rqw&_nc_zt=23&_nc_ht=scontent.fbog23-1.fna&_nc_gid=O2suxtYcfub_lPo5MBVryQ&_nc_ss=7b2a8&oh=00_Af6YlU-xzpb_imSEpG6LtnzrRLm7BDYdt1UE6Epu3rqoSg&oe=6A0FE868" class="d-block w-100" alt="Lectura en cafetería">
+        <div class="carousel-caption d-flex flex-column justify-content-center align-items-center">
+        <h1 class="display-5 fw-bold">Más que un recorrido es un cambio en ti</h1>
+        <p>Encuentra una conexion con la naturaleza</p>
+        </div>
+    </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Siguiente</span>
+    </button>
+</div>
+</section>
+<section id="categorias" class="Ruta-section">
+   
+</section>
+<section id="rutas" class="container py-5">
+    <h2 class="fw-bold text-center mb-4">RUTAS</h2>
+    <div class="row" id="catalog">
+    <div class="col-md-3 mb-4 catalog-item" data-cats='["Ruta Tabio - Tablazo"]'>
+        <div class="card">
+        <img src="https://hotelbarilochesantarosa.co/wp-content/uploads/2019/12/ciclomonta%C3%B1ismo.jpg" class="card-img-top" alt="">
+        <div class="card-body">
+            <h5 class="card-title">Ruta Tabio - Tablazo</h5>
+            <p class="card-text">$190.000</p>
+            <button class="btn btn-dark add-btn" data-title="Ruta Tabio - Tablazo" data-price="190000">Agregar</button>
+        </div>
+        </div>
+    </div>
+    <div
+
+   
+   
+    
+       
+</section>
+<section id="testimonios" class="py-5 bg-light">
+    <h2 class="fw-bold text-center mb-4">Testimonios</h2>
+    <div id="testSlider">
+    <div class="testimonial">"Estuvo super ese reorrido me encanto " — <strong>Jhon </strong></div>
+    <div class="testimonial d-none">"Me gusto la atencion y el profesionalismo del guia " — <strong>Diego</strong></div>
+    <div class="testimonial d-none">"Una gran experiencia super recomendado " — <strong>Daniel</strong></div>
+    </div>
+</section>
+<div>
+<section id="nuestros-clientes" class="py-5 bg-white">
+<div class="container text-center">
+    <h2 class="mb-4">Nuestras Marcas</h2>
+
+    <div class="logo-slider">
+    <div class="logo-track">
+        <img src="https://itmbikes.com/wp-content/uploads/2019/11/logo-gw-small.png" alt="Marca GW">
+        <img src="https://i.pinimg.com/originals/a0/21/10/a02110197d6c2d074bec3c5262810715.png" alt="Chimano">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReaLnh-N19wDAcivtyXO-Sy6rUDsr2M9-8RQ&s" alt="puerto macondo restaurante">
+        <img src="https://www.alcaldiadetabio.gov.co/SiteAssets/TurismoRediseno/assets/img/header-footer/santa-barbara.png" alt=" Mi Tabio">
+        <img src="https://ktm-bikes.co/cdn/shop/files/KTM_Logo-2016-RGB_Orange_onTransparent_Vertical.png?v=1776651548" alt="KTM">
+        <img src="https://us.123rf.com/450wm/yurihoayda/yurihoayda2111/yurihoayda211100030/178114962-dise%C3%B1o-de-logotipo-de-bicicleta-de-monta%C3%B1a-redonda-con-ciclista-extremo-en-la-cima-de-una-colina.jpg?ver=6" alt="Mountain biking">
+        
+       
+    
+    </div>
+    </div> 
+</div>
+<!-- REEMPLAZA EL FORMULARIO ANTERIOR POR ESTE -->
+
+<section id="registro" class="py-5 bg-light">
+<div class="container">
+
+<div class="card shadow-lg border-0 rounded-4 p-4">
+
+<h2 class="text-center fw-bold mb-4">
+🚴 Registro Juaica-Ecobike
+</h2>
+
+<form id="registroForm">
+
+<div class="row">
+
+<!-- NOMBRE -->
+<div class="col-md-6 mb-3">
+<label class="form-label fw-bold">Nombre Completo</label>
+
+<input 
+type="text"
+class="form-control"
+id="nombre"
+placeholder="Ingrese su nombre"
+required
+> 
+</div>
+
+<!-- CÉDULA -->
+<div class="col-md-6 mb-3">
+<label class="form-label fw-bold">Cédula</label>
+
+<input 
+type="number"
+class="form-control"
+id="cedula"
+placeholder="Ingrese su cédula"
+required
+> 
+</div>
+
+<!-- CORREO -->
+<div class="col-md-6 mb-3">
+<label class="form-label fw-bold">Correo Electrónico</label>
+
+<input 
+type="email"
+class="form-control"
+id="correo"
+placeholder="Ingrese su correo"
+required
+> 
+</div>
+
+<!-- CELULAR -->
+<div class="col-md-6 mb-3">
+<label class="form-label fw-bold">Número Celular</label>
+
+<input 
+type="tel"
+class="form-control"
+id="celular"
+placeholder="Ingrese su celular"
+required
+> 
+</div>
+
+<!-- RH -->
+<div class="col-md-12 mb-4">
+<label class="form-label fw-bold">RH</label>
+
+<select 
+class="form-select"
+id="rh"
+required
+> 
+<optionvalue="">Seleccione RH</option>
+<option>O+</option>
+<option>O-</option>
+<option>A+</option>
+<option>A-</option>
+<option>B+</option>
+<option>B-</option>
+<option>AB+</option>
+<option>AB-</option>
+</select>
+</div>
+
+</div>
+
+<!-- BOTONES REDONDOS -->
+<div class="text-center mb-4">
+
+<h5 class="fw-bold mb-3">
+Selecciona tu modalidad
+</h5>
+
+<div class="d-flex justify-content-center gap-4">
+
+<input type="radio" class="btn-check" name="modalidad" id="ruta" value="Ruta" autocomplete="off" required>
+
+<label class="btn btn-outline-success rounded-circle p-4 fw-bold"
+for="ruta"
+style="width:120px;height:120px;display:flex;align-items:center;justify-content:center;">
+🛣️ Ruta
+</label>
+
+<input type="radio" class="btn-check" name="modalidad" id="montana" value="Montaña" autocomplete="off">
+
+<label class="btn btn-outline-warning rounded-circle p-4 fw-bold"
+for="montana"
+style="width:120px;height:120px;display:flex;align-items:center;justify-content:center;">
+⛰️ Montaña
+</label>
+
+</div>
+
+</div>
+
+<!-- BOTÓN ENVIAR -->
+<div class="text-center">
+
+<button 
+type="submit"
+class="btn btn-dark px-5 py-3 rounded-pill fw-bold"
+> 
+EnviarRegistro
+</button>
+
+</div>
+
+<!-- MENSAJE -->
+<div id="mensajeRegistro" class="mt-4"></div>
+
+</form>
+
+</div>
+
+</div>
+</section>
+
+<script>
+
+document.getElementById("registroForm").addEventListener("submit", function(e){
+
+e.preventDefault();
+
+const nombre = document.getElementById("nombre").value;
+const modalidad = document.querySelector('input[name="modalidad"]:checked');
+
+if(!modalidad){
+alert("Selecciona Ruta o Montaña");
+return;
+}
+
+document.getElementById("mensajeRegistro").innerHTML = `
+<div class="alert alert-success text-center fw-bold">
+✅ Registro exitoso para ${nombre}<br>
+Modalidad seleccionada: ${modalidad.value}
+</div>
+`;
+
+this.reset();
+
+});
+
+</script>
+</section>
+</div>
+<section id="contacto" class="py-5">
+     <section id="contacto" class="py-5">
+
+<div class="container text-center">
+
+<h2 class="fw-bold mb-4">
+📍 Ruta Tabio - Tablazo
+</h2>
+
+<iframe 
+src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d78254.93605377061!2d-74.22153057295006!3d4.96394463747689!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x8e4079183fa5cb65%3A0x20097a44cc3abaea!2sTabio%2C%20Cundinamarca!3m2!1d4.916962!2d-74.096358!4m5!1s0x8e40620b54c30a39%3A0x961a9f300d9ccb40!2sCerro%20El%20Tablazo%3A%20Senderismo%2C%20Camping%2C%20Eventos%2C%20Vereda%20cerro%20el%20tablazo%2C%20Subachoque%2C%20Cundinamarca!3m2!1d5.0118582!2d-74.2041794!5e1!3m2!1ses!2sco!4v1779046482644!5m2!1ses!2sco"
+
+width="100%"
+height="450"
+style="border:0;"
+allowfullscreen=""
+loading="lazy"
+referrerpolicy="no-referrer-when-downgrade">
+
+</iframe>
+
+</div>
+
+</section>
+</iframe>
+
+</section>
+
+<button class="btn btn-success" onclick="document.getElementById('recorrido').style.display='block'">
+🗺️ Ver recorrido
+</button>
+
+<div id="recorrido" style="display:none; margin-top:10px;">
+    <img src="https://i.postimg.cc/RZCzL0fn/6062319e-7ed8-4dca-b90c-716ca076b3f1-(5).png" style="width:100%; max-width:600px; border-radius:10px;">
+</div>
+
+</div>
+    </div>
+    </div>
+    </div>
+</section>
+<section class="text-center py-4">
+    <h5 class="fw-bold mb-3">Síguenos</h5>
+    <div class="social-icons">
+    <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+    <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+        </div>
+</section>
+<a href="https://wa.me/573118480189?text=Hola Quiero Informacion 🚵‍♂️ ."
+class="whatsapp-float"
+target="_blank">
+
+<i class="fab fa-whatsapp"></i>
+
+</a>
+
+<div class="offcanvas offcanvas-end" tabindex="-1" id="cartDrawer">
+    <div class="offcanvas-header">
+    <h5 class="offcanvas-title">Compras</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="modal-body">
+    <div id="drawerItems"></div>
+    <hr>
+    <h6>Subtotal: <span id="drawerTotal">$0</span></h6>
+    <button class="btn btn-outline-danger mt-2 me-2" id="drawerClear">Vaciar carrito</button>
+    <button class="btn btn-success mt-2" id="drawerCheckout" data-bs-toggle="modal" data-bs-target="#facturaModal">Finalizar compra</button>
+    </div>
+</div>
+
+<div class="modal fade" id="facturaModal" tabindex="-1" aria-labelledby="facturaModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="facturaModalLabel">🧾 Factura de Compra - Juaica Eco Bike</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+     <div class="offcanvas-body">
+
+<div id="drawerItems"></div>
+
+<hr>
+
+<h6>
+Subtotal:
+<span id="drawerTotal">$0</span>
+</h6>
+
+<h5 class="fw-bold mt-4">
+Método de Pago
+</h5>
+
+<div class="form-check">
+<input class="form-check-input"
+type="radio"
+name="metodoPago"
+id="tarjeta"
+value="Tarjeta"
+checked>
+
+<label class="form-check-label" for="tarjeta">
+💳 Tarjeta
+</label>
+</div>
+
+<div class="form-check">
+<input class="form-check-input"
+type="radio"
+name="metodoPago"
+id="pse"
+value="PSE">
+
+<label class="form-check-label" for="pse">
+🏦 PSE
+</label>
+</div>
+
+<div class="form-check mb-3">
+<input class="form-check-input"
+type="radio"
+name="metodoPago"
+id="nequi"
+value="Nequi">
+
+<label class="form-check-label" for="nequi">
+📱 Nequi
+</label>
+</div>
+
+<button class="btn btn-outline-danger mt-2 me-2"
+id="drawerClear">
+Vaciar carrito
+</button>
+
+<button class="btn btn-success mt-2"
+id="drawerCheckout"
+data-bs-toggle="modal"
+data-bs-target="#facturaModal">
+Finalizar compra
+</button>
+
+</div>
+        <hr>
+        <div class="text-end">
+          <h5>TOTAL PAGADO: <span id="facturaTotal">$0</span></h5>
+        </div>
+        <p class="text-center mt-3 text-success fw-bold">¡Gracias por tu compra!</p>
+      </div>
+      <div class="modal-footer">
+       <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+  Cerrar
+</button>
+
+<button type="button" class="btn btn-pink" onclick="window.print()">
+  Imprimir Factura
+</button>
+
+<button type="button" class="btn btn-success" id="btnPDF">Descargar PDF</button>
+  Descargar PDF
+</button>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<footer>
+    <p>© 2026 Juaica Ecobike todos los derechos reservados  </p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+    let cart = [];
+    const cartBadge = document.getElementById("cartBadge");
+    const drawerItems = document.getElementById("drawerItems");
+    const drawerTotal = document.getElementById("drawerTotal");
+
+    function formatPrice(price) {
+        return "$"+price.toLocaleString('es-CO'); // Usar el formato de moneda local si es posible
+    }
+
+    function updateCart() {
+        // Actualiza el número de ítems en el badge del carrito
+        cartBadge.textContent = cart.reduce((a, b) => a + b.qty, 0);
+
+        // Genera el HTML de los ítems en el offcanvas del carrito
+        drawerItems.innerHTML = cart.map((i, index) => `
+            <div class="d-flex justify-content-between mb-2 align-items-center">
+                <span>${i.title} (${i.qty})</span>
+                <div class="d-flex align-items-center">
+                    <span class="me-2">${formatPrice(i.price * i.qty)}</span>
+                    <button class="btn btn-sm btn-outline-secondary me-1 remove-one-btn" data-index="${index}">-</button>
+                    <button class="btn btn-sm btn-danger delete-item-btn" data-index="${index}"><i class="fa-solid fa-trash-can"></i></button>
+                </div>
+            </div>`).join("");
+
+        // Calcula y actualiza el total
+        const total = cart.reduce((a, b) => a + b.price * b.qty, 0);
+        drawerTotal.textContent = formatPrice(total);
+        
+        // Asigna listeners a los nuevos botones dentro del offcanvas
+        setupDrawerListeners();
+    }
+    
+    function setupDrawerListeners() {
+        // Listener para quitar una unidad
+        document.querySelectorAll(".remove-one-btn").forEach(btn => {
+            btn.addEventListener("click", () => {
+                const index = parseInt(btn.dataset.index);
+                if (cart[index].qty > 1) {
+                    cart[index].qty--;
+                } else {
+                    cart.splice(index, 1); // Si solo queda 1, lo elimina
+                }
+                updateCart();
+            });
+        });
+        
+        // Listener para eliminar el ítem completamente
+        document.querySelectorAll(".delete-item-btn").forEach(btn => {
+            btn.addEventListener("click", () => {
+                const index = parseInt(btn.dataset.index);
+                cart.splice(index, 1);
+                updateCart();
+            });
+        });
+    }
+
+    // --- Lógica del Carrito y Factura ---
+    function setupCartLogic() {
+        // 1. Botones de "Agregar"
+        document.querySelectorAll(".add-btn").forEach(btn => {
+            btn.addEventListener("click", () => {
+                const title = btn.dataset.title;
+                const price = parseInt(btn.dataset.price);
+                const item = cart.find(p => p.title === title);
+                if (item) item.qty++;
+                else cart.push({ title, price, qty: 1 });
+                updateCart();
+            });
+        });
+
+        // 2. Botón de "Vaciar carrito"
+        document.getElementById("drawerClear").onclick = () => {
+            if (cart.length === 0) {
+                alert("El carrito ya está vacío.");
+                return;
+            }
+            if (confirm("¿Estás seguro de que deseas vaciar el carrito?")) {
+                cart = [];
+                updateCart();
+            }
+        };
+
+        // 3. Botón de "Finalizar compra" (Abre el Modal y genera la factura)
+        document.getElementById("drawerCheckout").onclick = (e) => {
+            if (cart.length === 0) {
+                e.stopPropagation(); // Previene que el modal se abra si el carrito está vacío
+                alert("Tu carrito está vacío. Agrega un libro para finalizar la compra.");
+                return;
+            }
+            // Muestra la información en el modal de factura antes de abrirlo
+            generateFactura();
+        };
+    }
+    
+    // Función para generar y mostrar la factura en el modal
+    function generateFactura() {
+        const now = new Date();
+        const facturaDate = now.toLocaleDateString('es-CO') + ' ' + now.toLocaleTimeString('es-CO');
+        const orderNumber = 'ORD-' + Date.now().toString().slice(-6);
+        const total = cart.reduce((a, b) => a + b.price * b.qty, 0);
+
+        document.getElementById("facturaFecha").textContent = facturaDate;
+        document.getElementById("facturaNumero").textContent = orderNumber;
+        document.getElementById("facturaTotal").textContent = formatPrice(total);
+
+        // Generar detalle de los productos
+        const facturaItemsHtml = cart.map(i => `
+            <div class="d-flex justify-content-between">
+                <span>${i.qty} x ${i.title}</span>
+                <span>${formatPrice(i.price)} c/u = ${formatPrice(i.price * i.qty)}</span>
+            </div>
+        `).join('');
+
+        document.getElementById("facturaItems").innerHTML = facturaItemsHtml;
+        
+        // Opcional: Limpiar el carrito después de "finalizar" la compra
+        // NOTA: En un caso real, esto se haría DENTRO del proceso de pago.
+        // Aquí se simula. Para evitar que se vacíe al solo abrir, puedes comentarlo.
+        // Si lo dejas, al hacer clic, se abre la factura y se vacía el carrito.
+        setTimeout(() => {
+            cart = [];
+            updateCart();
+            // Cierra el offcanvas del carrito una vez que la factura se genera
+            const cartDrawer = bootstrap.Offcanvas.getInstance(document.getElementById('cartDrawer'));
+            if(cartDrawer) cartDrawer.hide();
+        }, 500); 
+    }
+
+    // --- Lógica de Categorías (se mantiene) ---
+    const catButtons = document.querySelectorAll(".cat-btn");
+    const allBtn = document.getElementById("allBtn");
+    const items = document.querySelectorAll(".catalog-item");
+
+    function setupCategoryFilter() {
+        const normalize = s => {
+            if (!s) return '';
+            return String(s)
+            .normalize('NFD')                
+            .replace(/[\u0300-\u036f]/g, '')  
+            .toLowerCase()
+            .trim();
+        };
+
+        const bookCats = Array.from(items).map(book => {
+            const raw = book.getAttribute('data-cats') || '[]';
+            let arr;
+            try {
+                arr = JSON.parse(raw);
+                if (!Array.isArray(arr)) arr = [];
+            } catch (e) {
+                arr = raw.replace(/[\[\]"']/g, '').split(',').map(x => x.trim()).filter(Boolean);
+            }
+            return arr.map(normalize);
+        });
+
+        function applyFilter(normalizedCat) {
+            items.forEach((book, i) => {
+                const cats = bookCats[i] || [];
+                const show = !normalizedCat || normalizedCat === 'todos' || cats.includes(normalizedCat);
+                if (show) {
+                    book.classList.remove('hide');
+                    book.style.display = 'block'; // Mostrar como bloque para que Bootstrap maneje el grid
+                } else {
+                    book.classList.add('hide');
+                    book.style.display = 'none';
+                }
+            });
+        }
+
+        catButtons.forEach(btn => {
+            btn.addEventListener("click", () => {
+                catButtons.forEach(b => b.classList.remove("active"));
+                btn.classList.add("active");
+                const rawCat = btn.getAttribute('data-cat') || btn.textContent || '';
+                const normalized = normalize(rawCat);
+
+                if (btn.id === 'allBtn' || normalized === 'todos' || normalized === '') {
+                    applyFilter('');
+                } else {
+                    applyFilter(normalized);
+                }
+                document.getElementById("books").scrollIntoView({behavior:"smooth"});
+            });
+        });
+
+        // Iniciar filtro
+        const activeBtn = allBtn || catButtons[0];
+        if (activeBtn) activeBtn.click();
+    }
+    
+    // --- Lógica de Testimonios (se mantiene) ---
+    function setupTestimonialSlider() {
+        let t = 0;
+        const slides = document.querySelectorAll("#testSlider .testimonial");
+        if (slides.length > 0) {
+            slides.forEach((s, i) => { if (i !== 0) s.classList.add("d-none"); });
+            setInterval(() => {
+                slides[t].classList.add("d-none");
+                t = (t + 1) % slides.length;
+                slides[t].classList.remove("d-none");
+            }, 4000);
+        }
+    }
+
+    // --- Lógica de Contacto (se mantiene) ---
+    function setupContactForm() {
+        const contactForm = document.getElementById('contactForm');
+        const contactMsg = document.getElementById('contactMsg');
+        if (contactForm) {
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                const name = (contactForm.querySelector('input[name="name"]') || { value: '' }).value.trim();
+                const email = (contactForm.querySelector('input[name="email"]') || { value: '' }).value.trim();
+                const message = (contactForm.querySelector('textarea[name="message"]') || { value: '' }).value.trim();
+                
+                if (!name || !email || !message) {
+                    contactMsg.innerHTML = '<div class="alert alert-danger">Por favor completa todos los campos.</div>';
+                    return;
+                }
+                
+                // Simulación de envío exitoso
+                contactMsg.innerHTML = '<div class="alert alert-success">¡Mensaje enviado con éxito! Te contactaremos pronto.</div>';
+                contactForm.reset();
+                setTimeout(() => contactMsg.innerHTML = '', 5000);
+            });
+        }
+    }
+
+    // Inicializar todo al cargar el DOM
+    document.addEventListener('DOMContentLoaded', () => {
+        setupCartLogic();
+        setupCategoryFilter();
+        setupTestimonialSlider();
+        setupContactForm();
+        updateCart(); // Asegura que el carrito se inicialice
+    });
+    
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+   // TODO tu código del carrito (NO TOCAR)
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+<script>
+    // Esperar a que la página cargue
+    setTimeout(function() {
+        // Buscar todos los botones que digan "Descargar PDF"
+        var botones = document.querySelectorAll('.btn-success');
+        for(var i = 0; i < botones.length; i++) {
+            if(botones[i].innerText.includes('Descargar') || botones[i].innerText.includes('PDF')) {
+                botones[i].onclick = function() {
+                    var factura = document.querySelector('#facturaModal .modal-content, #facturaModal .offcanvas-body');
+                    if(factura) {
+                        html2pdf().from(factura).save();
+                    } else {
+                        alert('No se encontró la factura');
+                    }
+                };
+            }
+        }
+    }, 1000);
+</script>
+</body>
+</html>
+ 
